@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/vuilletg/shitCode/issues"
   },
-  "homepage": "https://github.com/vuilletg/shitCode#readme"
+  "homepage": "https://github.com/vuilletg/shitCode#readme",
+  "dependencies": {
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7"
+  }
 }
