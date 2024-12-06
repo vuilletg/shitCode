@@ -72,3 +72,9 @@ table {
     border-collapse: collapse;
     margin: 0 auto; 
 }
+
+a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
