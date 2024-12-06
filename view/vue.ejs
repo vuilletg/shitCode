@@ -94,7 +94,7 @@
             <td class="ln">
                 
             </td>
-            <td class="ln">
+            <td class="ln" >
         
             </td>
         </tr>
@@ -145,6 +145,11 @@
         variable.forEach(variables => {
             if (variables.classList.contains('bonneplace')) {
                 variables.style.backgroundColor='#9DA500';
+            }
+        })
+        variable.forEach(variables => {
+            if (variables.classList.contains('desactive')) {
+                variables.style.backgroundColor='#d5d5d5';
             }
         })
     </script>
