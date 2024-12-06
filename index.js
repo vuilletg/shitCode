@@ -73,11 +73,11 @@ app.get('/:mot', (req, res) => {
             salade = salade + 1
         })
         if (salade === 5){
+            let gateau = []
+            client.query("SELECT dIcKo.mot as lemotdansledicodelabasedujeutrèssympaquenousdevonsdevelopperpourlanuitdelinformatiquedeuxmillevingtquatre FROM dIckO WHERE diCKo.id = ?",[req.session.mis],(resultat,erreurs)=>{
+                gateau = erreurs.split("")
+            });
             tab.forEach(bonbon =>{
-                let gateau = []
-                client.query("SELECT dIcKo.mot as lemotdansledicodelabasedujeutrèssympaquenousdevonsdevelopperpourlanuitdelinformatiquedeuxmillevingtquatre FROM dIckO WHERE diCKo.id = ?",[req.session.mis],(resultat,erreurs)=>{
-                    gateau = erreurs.split("")
-                });
                 let introuvable = 0
                 let index =0
                 gateau.forEach((pomme) =>{
