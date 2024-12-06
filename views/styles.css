@@ -1,7 +1,27 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    background-color: rgb(52, 52, 52);
+    background: linear-gradient(-45deg, #989898, #171717, #171717, #a527bc);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+}
+
+
+body {
+	
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 hr {
@@ -40,6 +60,7 @@ table {
     
 }
 
+
 .keyboard-row {
     display: flex;
     margin-bottom: 10px;
@@ -57,6 +78,11 @@ table {
     cursor: pointer;
     background-color: #fff;
 }
+.key:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(24, 24, 24);
+}
+
 
 td.ln {
     text-align:center;
