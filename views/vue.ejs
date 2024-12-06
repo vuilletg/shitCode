@@ -13,92 +13,13 @@
     <hr>
     <br>
     <table id="tab">
-        <tr id="ligne">
-            <td class="ln">
-                
-            </td>
-            <td class="ln">
-                
-            </td>
-            <td class="ln">
-                
-            </td>
-            <td class="ln">
-                
-            </td>
-            <td class="ln">
-                
-            </td>
-        </tr>
-        <tr id="ligne"> 
-            <td class="ln">
-                
-            </td>
-            <td class="ln">
-                
-            </td>
-            <td class="ln">
-                
-            </td>
-            <td class="ln">
-                
-            </td>
-            <td class="ln">
-                
-            </td>
-        </tr>
-        <tr id="ligne"> 
-            <td class="ln">
-                
-            </td>
-            <td class="ln">
-                
-            </td>
-            <td class="ln">
-                
-            </td>
-            <td class="ln">
-                
-            </td>
-            <td class="ln">
-                
-            </td>
-        </tr>
-        <tr id="ligne"> 
-            <td class="ln">
-                
-            </td>
-            <td class="ln">
-                
-            </td>
-            <td class="ln">
-                
-            </td>
-            <td class="ln">
-                
-            </td>
-            <td class="ln">
-                
-            </td>
-        </tr>
-        <tr id="ligne"> 
-            <td class="ln">
-                
-            </td>
-            <td class="ln">
-                
-            </td>
-            <td class="ln">
-                
-            </td>
-            <td class="ln">
-                
-            </td>
-            <td class="ln desactive" >
-        
-            </td>
-        </tr>
-        <tr id="ligne">
+        <% for (let max = 0 ; max < tab.length;max++){ console.log(max)
+            if (max%5 ===0){%>
+                <tr id="ligne">
+            <%}%>
+                    <td class="ln<%=((tab[max].score !== null)?" "+tab[max].score : "")%><%=((max === i)?" desactive":"")%>"><%=((tab[max].value !== null)?tab[max].value : "")%></td>
+                    <%if(max%5 ===4){%></tr><%}%>
+        <%}%>
     </table>
     <div id="keyboard">
         <div class="keyboard-row">
